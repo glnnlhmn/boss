@@ -1,15 +1,11 @@
-<!doctype html>
 <html>
-    <head>
-        <title>{{ title }} - Microblog</title>
-    </head>
-    <body>
-        <h1>Hello, {{ user.username }}!</h1>
-
-        <label for="avatar">Choose a profile picture:</label>
-
-        <input type="file"
-               id="avatar" name="avatar"
-               accept="image/png, image/jpeg">
-    </body>
+<head>
+    <title>upload the file : GFG</title>
+</head>
+<body>
+    <form action = "/success" method = "post" enctype="multipart/form-data">
+        <input type="file" name="file" />
+        <input type = "submit" value="Upload">
+    </form>
+</body>
 </html>
